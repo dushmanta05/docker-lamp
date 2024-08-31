@@ -34,7 +34,7 @@ This repository provides setup instructions for a LAMP stack using Docker.
 2. Navigate to the repository.
 
    ```bash
-   cd lamp
+   cd docker-lamp
    ```
 
 3. Build the Dockerfile.
