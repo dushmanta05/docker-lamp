@@ -1,0 +1,33 @@
+/* adminer.css */
+/* Reset to original light look (Adminer 4.x style) */
+body {
+  background: #fff !important;
+  color: #000 !important;
+  font-family: sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000 !important;
+}
+
+a {
+  color: #00f !important;
+}
+
+fieldset {
+  border: 1px solid #aaa !important;
+  background: #f9f9f9 !important;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #aaa !important;
+  background: #fff !important;
+  color: #000 !important;
+}

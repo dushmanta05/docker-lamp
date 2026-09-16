@@ -1,0 +1,12 @@
+# Ignore environment files
+*.env
+!.env.example
+
+# IDE setting files
+.vscode/
+.zed/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db

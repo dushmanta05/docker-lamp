@@ -1,0 +1,27 @@
+services:
+    postgres:
+        container_name: postgres_container
+        image: postgres:17
+        environment:
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+            POSTGRES_DB: ${POSTGRES_DB}
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+        restart: unless-stopped
+
+    adminer:
+        container_name: adminer_container
+        image: adminer:latest
+        restart: unless-stopped
+        ports:
+            - "8080:8080"
+        depends_on:
+            - postgres
+        volumes:
+            - ./adminer.css:/var/www/html/adminer.css
+
+volumes:
+    postgres_data:
